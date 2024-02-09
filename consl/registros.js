@@ -4,7 +4,7 @@ const service = require('./../models/conexion');
 
 const list = (req,res)=> service
 .list()
-.then((response) => res.json("hola mundo"))
+.then((response) => res.json(response))
 .catch((e)=> res.json({e}));
 
 const id = (req,res)=>
