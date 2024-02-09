@@ -34,7 +34,7 @@ const deleteId = (req,res)=>
     .catch((e)=> res.json({e}));
 
 
-router.get('/db', list)
+router.get('/', list)
 router.get('/:id', id)
 router.post("/",create)
 router.put('/:id', update)
